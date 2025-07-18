@@ -19,12 +19,6 @@ Clone the repository to your local machine:
 git clone https://github.com/yourusername/docnova.git
 ```
 
-Navigate to the project directory:
-
-```bash
-cd docnova
-```
-
 Install the dependencies:
 
 ```bash

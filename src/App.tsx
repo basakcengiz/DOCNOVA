@@ -6,6 +6,7 @@ import InvoiceList from './components/InvoiceList';
 import InvoiceDetail from './components/InvoiceDetail';
 import { Toaster } from 'react-hot-toast';
 import LogoutButton from './components/LogoutButton';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   const location = useLocation();
@@ -18,8 +19,8 @@ function App() {
       <Language />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/invoiceList" element={<InvoiceList />} />
-        <Route path="/invoice-detail" element={<InvoiceDetail />} />
+        <Route path="/invoiceList" element={<ProtectedRoute element={<InvoiceList />} />} />
+        <Route path="/invoice-detail" element={<ProtectedRoute element={<InvoiceDetail />} />} />
         <Route path="*" element={'Not Found'} />
       </Routes>
     </>

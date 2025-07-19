@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 
 const InvoiceDetail = () => {
   const { t } = useTranslation();
+  const { jwt } = useAppSelector((state) => state.user);
   const { invoiceDetail } = useAppSelector((state) => state.invoice);
 
   const items: DescriptionsProps['items'] = [
@@ -142,9 +143,11 @@ const InvoiceDetail = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '70px' }}>
-      <Card style={{ width: '90%' }} title={<span style={{ color: '#FF9A9A' }}>{t('invoiceDetail')}</span>}>
-        <Descriptions items={items} />
-      </Card>
+      {jwt && (
+        <Card style={{ width: '90%' }} title={<span style={{ color: '#FF9A9A' }}>{t('invoiceDetail')}</span>}>
+          <Descriptions items={items} />
+        </Card>
+      )}
     </div>
   );
 };

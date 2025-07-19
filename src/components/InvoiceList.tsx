@@ -87,7 +87,7 @@ const InvoiceList = () => {
             <a
               onClick={() => {
                 dispatch(setInvoiceDetail(record));
-                navigate(`/invoice-detail/${record.id}`);
+                navigate(`/invoice-detail`);
               }}
             >
               {<span style={{ color: '#FF9A9A' }}>{t('detail').toLocaleUpperCase()}</span>}
@@ -100,12 +100,14 @@ const InvoiceList = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Table
-        columns={columns}
-        rowKey="id"
-        dataSource={invoices}
-        style={{ width: '90%', border: '1px solid #e0e0e0', borderRadius: '10px', marginTop: '100px' }}
-      />
+      {jwt && (
+        <Table
+          columns={columns}
+          rowKey="id"
+          dataSource={invoices}
+          style={{ width: '90%', border: '1px solid #e0e0e0', borderRadius: '10px', marginTop: '100px' }}
+        />
+      )}
     </div>
   );
 };

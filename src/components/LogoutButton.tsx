@@ -16,7 +16,7 @@ const LogoutButton = () => {
 
   return (
     <div style={{ position: 'absolute', top: 25, right: 130 }}>
-      <Button color="danger" variant="solid" onClick={handleLogout} /* style={{ position: 'absolute', right: '20', top: '20' }} */>
+      <Button color="danger" variant="solid" onClick={handleLogout}>
         {t('logout')}
       </Button>
     </div>

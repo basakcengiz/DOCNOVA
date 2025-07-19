@@ -8,8 +8,7 @@
 - React Router DOM: For handling client-side routing and navigation.
 - React Hot Toast: A library for toast notification.
 - Ant Design: UI component library for building modern and responsive interfaces.
-- Axios: For making HTTP requests to the OMDB API.
-- Vite: Development environment for faster builds.
+- Axios: For making HTTP requests to the API.
 
 ### Installation
 

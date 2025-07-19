@@ -3,6 +3,7 @@
   "email": "E-Posta",
   "password": "Şifre",
   "login": "Giriş Yap",
+  "logout": "Çıkış Yap",
   "emailReq": "E-Posta gerekli!",
   "passwordReq": "Şifre gerekli!",
   "invoiceNumber": "Fatura Numarası",

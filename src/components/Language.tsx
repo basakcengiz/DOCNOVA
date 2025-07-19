@@ -13,7 +13,7 @@ const Language = () => {
   };
 
   return (
-    <div style={{ position: 'absolute', top: 25, right: 50 }}>
+    <div style={{ position: 'absolute', top: 25, right: 30 }}>
       <Dropdown menu={{ items, onClick: handleMenuClick }}>
         <a onClick={(e) => e.preventDefault()}>
           <Space>

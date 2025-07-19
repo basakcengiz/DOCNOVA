@@ -3,6 +3,7 @@
   "email": "E-Mail",
   "password": "Password",
   "login": "Login",
+  "logout": "Logout",
   "emailReq": "E-Mail required!",
   "passwordReq": "Password required!",
   "invoiceNumber": "Invoice Number",
